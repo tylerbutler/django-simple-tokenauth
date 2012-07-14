@@ -1,0 +1,5 @@
+Django>=1.4
+path.py>=2.2.2
+pytz>=2012c
+
+git+git://github.com/tylerbutler/propane.git

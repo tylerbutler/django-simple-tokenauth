@@ -1,0 +1,5 @@
+recursive-include doc_source *
+
+include LICENSE.*
+include README.*
+include *.txt

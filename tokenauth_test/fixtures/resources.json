@@ -1,0 +1,23 @@
+[
+    {
+        "model":"tokenauth_test.simpleresource",
+        "pk":1,
+        "fields":{
+            "value":1
+        }
+    },
+    {
+        "model":"tokenauth_test.simpleresource",
+        "pk":2,
+        "fields":{
+            "value":2
+        }
+    },
+    {
+        "model":"tokenauth_test.simpleresource",
+        "pk":3,
+        "fields":{
+            "value":3
+        }
+    }
+]
