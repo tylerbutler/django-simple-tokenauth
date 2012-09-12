@@ -48,3 +48,16 @@ class AccessTokenTest(TestCase):
         token.save()
         valid, token = AccessToken.validate(token, self.resource.pk)
         self.assertFalse(valid)
+
+    def test_expiration_recreation(self):
+        token = AccessToken.create_token(self.resource, self.user)
+        token.time_issued = timezone.now() - timedelta(hours=2)
+        token.save()
+        self.assertTrue(token.expired)
+        valid, token = AccessToken.validate(token, self.resource.pk)
+        self.assertFalse(valid)
+
+        new_token = AccessToken.create_token(self.resource, self.user)
+        self.assertFalse(new_token.expired)
+        valid, new_token = AccessToken.validate(new_token, self.resource.pk)
+        self.assertTrue(valid)
