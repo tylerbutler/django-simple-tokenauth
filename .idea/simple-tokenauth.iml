@@ -11,15 +11,15 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tokenauth_test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tokenauth" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.tox" />
+      <excludeFolder url="file://$MODULE_DIR$/django_simple_tokenauth.egg-info" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 2.7.2 virtualenv at C:\Users\tylerbu\.virtualenvs\simple-tokenauth" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
-    <option name="templateLanguage" value="Django" />
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
   </component>
 </module>
