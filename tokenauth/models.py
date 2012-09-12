@@ -43,8 +43,6 @@ class AccessToken(models.Model):
     def expired(self):
         """Returns ``True`` if the access token has expired, ``False`` otherwise. *Read-only property.*"""
         if timezone.now() > self.expiry_time:
-            if settings.SIMPLE_TOKENAUTH_AUTO_DELETE:
-                self.delete()
             return True
         else:
             return False
